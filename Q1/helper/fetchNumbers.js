@@ -10,6 +10,8 @@ const id_url = {
 }
 
 const ACCESS_TOKEN = process.env.TOKEN
+
+//Fetching the nums here
 export default async function fetchNums(id) {
     const url = id_url[id];
     if (!url) throw new Error('Invalid ID');
