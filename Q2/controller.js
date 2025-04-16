@@ -21,7 +21,6 @@ router.get('/users', async (req, res) => {
             }
             userCommentCounts.push({
                 id,
-                name: data.users[id],
                 totalComments
             });
         }
